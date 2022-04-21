@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learn C#</title>
+        <meta content="Learn C#" name="keywords">
+        <meta content="Learn C#" name="description">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="../favicon/favicon-32x32.png" sizes="32x32" />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS and Font Awesome -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body id="top-page">
+
+        <!-- Banner -->
+        <div class="banner">
+            <div class="container-fluid banner">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-4 col-md-6 col-sm-4">
+                        <h1>Learn C#</h1>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8 d-flex flex-row-reverse">
+                        <a class="btn btn-login" data-bs-content="Login" href="#">Log in</a>
+                        <a class="btn btn-signup" data-bs-content="Signup" href="#">Sign up</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+        <!-- Sticky Navbar -->
+        <nav class="navbar navbar-expand-sm" id="navbar">
+            <div class="container-fluid align-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="../index.html"><i class="fa fa-house-chimney"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="intro.html">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="author.html">Author</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase active" href="tutorial.html">Tutorial</a>
+                    </li>
+                </ul>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search . . ." name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Tutorial -->
+        <div class="tutorial">
+            <div class="container-fluid">
+                <div class="left" style="top: 100px; padding-top: 20px;" id="left">
+                    <div class="search-menu">
+                        <h2>C# Tutorial</h2>
+                        <input class="search" autocomplete="off" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+                    
+                        <ul id="myMenu">
+                            <li><a href="tutorial.html">C# Get Started</a></li>
+                            <li><a href="syntax.html">C# Syntax</a></li>
+                            <li><a href="output.html">C# Output</a></li>
+                            <li><a href="comments.html">C# Comments</a></li>
+                            <li><a class="active" href="variables.html">C# Variables</a></li>
+                            <li><a href="data-types.html">C# Data Types</a></li>
+                            <li><a href="type-casting.html">C# Type Casting</a></li>
+                            <li><a href="user-input.html">C# User Input</a></li>
+                            <li><a href="operators.html">C# Operators</a></li>
+                            <li><a href="math.html">C# Math</a></li>
+                            <li><a href="booleans.html">C# Booleans</a></li>
+                            <li><a href="if-else.html">C# If...Else</a></li>
+                            <li><a href="switch.html">C# Switch</a></li>
+                            <li><a href="while-loop.html">C# While Loop</a></li>
+                            <li><a href="for-loop.html">C# For Loop</a></li>
+                            <li><a href="break/continue.html">C# Break/Continue</a></li>
+                            <li><a href="arrays.html">C# Arrays</a></li>
+                        </ul>
+                    </div>ef="arrays.html">C# Arrays</a>
+                    </div>
+                </div>
+                <!-- Variables -->
+                <div class="right text-justify" id="get-started">
+                    <h1>C# Varriables</h1>
+                    <a class="btn btn-prev" href="comments.html"><i class="fa-solid fa-angles-left"></i> Previous</i></a>
+                    <a class="btn btn-next" href="data-types.html">Next <i class="fa-solid fa-angles-right"></i></a>
+                    <hr>
+                    <h2>C# Variables</h2>
+                    <p>Variables are containers for storing data values.</p>
+                    <p>In C#, there are different <strong>types</strong> of variables (defined with different keywords), for example:</p>
+                    <ul>
+                        <li><span>int</span>- stores integers (whole numbers), without decimals, such as 123 or -123</li>
+                        <li><span>double</span>- stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+                        <li><span>char</span>- stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+                        <li><span>string </span>- stores text, such as "Hello World". String values are surrounded by double quotes</li>
+                        <li><span>bool</span>- stores values with two states: true or false</li>
+                    </ul>
+                    <h2>Declaring (Creating) Variables</h2>
+                    <p>To create a variable, you must specify the type and assign it a value:</p>
+                    <h3>Syntax</h3>
+                    <img src="../img/Variables.png">
+                    <p>
+                        Where type is a C# type (such as <span>int</span> or <span>string</span>), and variableName is the name of the variable (such as <strong>x</strong> or <strong>name</strong>). 
+                        The <strong>equal sign</strong> is used to assign values to the variable.
+                    </p>
+                    <p>To create a variable that should store text, look at the following example:</p>
+                    <h3>Example</h3>
+                    <p>Create a variable called <strong>name</strong> of type <span>string</span> and assign it the value " <strong>John</strong>":</p>
+                    <img src="../img/Variables1.png">
+                    <p>To create a variable that should store a number, look at the following example:</p>
+                    <h3>Example</h3>
+                    <p>Create a variable called <strong>myNum</strong> of type <span>int</span> and assign it the value <strong>15</strong>:</p>
+                    <img src="../img/Variables2.png">
+                    <p>You can also declare a variable without assigning the value, and assign the value later:</p>
+                    <h3>Example</h3>
+                    <img src="../img/Variables3.png">
+                    <p>Note that if you assign a new value to an existing variable, it will overwrite the previous value:</p>
+                    <h3>Example</h3>
+                    <p>Change the value of <span>myNum</span> to <strong>20</strong>:</p>
+                    <img src="../img/Variables4.png">
+                    <hr>
+                    <h2>Constants</h2>
+                    <p>However, you can add the <span>const </span> keyword if you don't want others (or yourself) to overwrite existing values (this will declare the variable as "constant", which means unchangeable and read-only):</p>
+                    <h3>Example</h3>
+                    <img src="../img/Variables5.png">
+                    <div class="note">
+                        <p>The <span>const</span> keyword is useful when you want a variable to always store the same value, so that others (or yourself) won't mess up your code. An example that is often referred to as a constant, is PI (3.14159...).</p>
+                        <p><strong>Note:</strong> You cannot declare a constant variable without assigning the value. If you do, an error will occur: <span class="atten">A const field requires a value to be provided</span>.</p>
+                    </div>
+                    <hr>
+                    <h2>Other Types</h2>
+                    <p>A demonstration of how to declare variables of other types:</p>
+                    <h3>Example</h3>
+                    <img src="../img/Variables6.png">
+                    <div class="note">
+                        <p>You will learn more about <a href="data-types.html">data types</a> in the next chapter.</p>
+                    </div>
+                    <hr>
+                    <h2>Display Variables</h2>
+                    <p>The <span>WriteLine()</span> method is often used to display variable values to the console window.</p>
+                    <p>To combine both text and a variable, use the <span>+</span> character:</p>
+                    <h3>Example</h3>
+                    <img src="../img/Variables7.png">
+                    <p>You can also use the + character to add a variable to another variable:</p>
+                    <h3>Example</h3>
+                    <img src="../img/Variables8.png">
+                    <p>For numeric values, the <span>+</span> character works as a mathematical operator (notice that we use <span>int</span> (integer) variables here):</p>
+                    <h3>Example</h3>
+                    <img src="../img/Variables9.png">
+                    <p>From the example above, you can expect:</p>
+                    <ul>
+                        <li>x stores the value 5</li>
+                        <li>y stores the value 6</li>
+                        <li>Then we use the <span>WriteLine()</span> method to display the value of x + y, which is <strong>11</strong></li>
+                    </ul>
+                    <hr>
+                    <h2>Declare Many Variables</h2>
+                    <p>To declare more than one variable of the <strong>same type</strong>, use a comma-separated list:</p>
+                    <h3>Example</h3>
+                    <img src="../img/Variables10.png">
+                    <p>You can also assign the <strong>same value</strong> to multiple variables in one line:</p>
+                    <h3>Example</h3>
+                    <img src="../img/Variables11.png">
+                    <hr>
+                    <h2>C# Identifiers</h2>
+                    <p>All C# <strong>variables</strong> must be <strong>identified</strong> with <strong>unique names</strong>.</p>
+                    <p>These unique names are called <strong>identifiers</strong>.</p>
+                    <p>Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).</p>
+                    <p><strong>Note:</strong> It is recommended to use descriptive names in order to create understandable and maintainable code:</p>
+                    <h3>Example</h3>
+                    <img src="../img/Variables12.png">
+                    <p>The general rules for naming variables are:</p>
+                    <ul>
+                        <li>Names can contain letters, digits and the underscore character (_)</li>
+                        <li>Names must begin with a letter</li>
+                        <li>Names should start with a lowercase letter and it cannot contain whitespace</li>
+                        <li>Names are case sensitive ("myVar" and "myvar" are different variables)</li>
+                        <li>Reserved words (like C# keywords, such as <span>int</span> or <span>double</span>) cannot be used as names</li>
+                    </ul>
+
+                    <a class="btn btn-prev" href="comments.html"><i class="fa-solid fa-angles-left"></i> Previous</i></a>
+                    <a class="btn btn-next" href="data-types.html">Next <i class="fa-solid fa-angles-right"></i></a>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer --> 
+        <footer class="footer text-center" style="margin-left: 10rem;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7 mb-1">
+                        <div class="row">
+                            <div class="col-8">
+                                <!-- Footer Useful Links-->
+                                <h4 class="text-uppercase mb-4">Useful Links</h4>
+                                <div class="row justify-content-center useful-links">
+                                    <div class="col-lg-4 col-md-12 p-1">
+                                        <ul class="list-unstyled">
+                                            <li><a href="">About</a></li>
+                                            <li><a href="">Blog</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12 p-1">
+                                        <ul class="list-unstyled">
+                                            <li><a href="">.NET</a></li>
+                                            <li><a href="">Learn More</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Footer Social Network-->
+                                <h4 class="text-uppercase my-4">Social Network</h4>
+                                <a class="btn btn-outline-light btn-social mx-1 mt-1" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="link đến facebook của tôi" href="https://www.facebook.com/profile.php?id=100042162583718"><i class="fab fa-fw fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social mx-1 mt-1" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="link đến twitter của tôi" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social mx-1 mt-1" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="link đến instagram của tôi" href="#!"><i class="fa-brands fa-instagram"></i></a>
+                                <a class="btn btn-outline-light btn-social mx-1 mt-1" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="link đến discord của tôi" href="#"><i class="fa-brands fa-discord"></i></a>
+                            </div>
+                             <!-- Footer Quick Contact-->
+                            <div class="col-4">
+                                <h4 class="text-uppercase mb-4">Quick Contact</h4>
+                                <h6 class="text-left">Supporter: </h6>
+                                <p class="lead text-left">Nguyễn Hoàng Đức</p>
+                                <h6 class="text-left">Phone: </h6>
+                                <p class="lead text-left">+84 971 344 172</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Contact-->
+                    <div class="col-lg-5 col-md-5 mb-1">
+                        
+                        <h4 class="text-uppercase mb-4">Contact Us</h4>
+                        <form>
+                            <fieldset class="d-flex justify-content-start form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </fieldset>
+                            <fieldset class="d-flex justify-content-start form-group">
+                                <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                            </fieldset>
+                            <fieldset class="d-flex justify-content-start form-group text-xs-right">
+                                <button type="button" class="btn btn-outline-light btn-lg">Send</button>
+                             </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Kit Font Awesome -->
+        <script src="https://kit.fontawesome.com/aaa1dc302c.js" crossorigin="anonymous"></script>
+
+        <!-- Script JS -->
+        <script src="../js/script.js"></script>
+    </body>
+</html>

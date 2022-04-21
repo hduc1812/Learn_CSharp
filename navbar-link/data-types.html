@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learn C#</title>
+        <meta content="Learn C#" name="keywords">
+        <meta content="Learn C#" name="description">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="../favicon/favicon-32x32.png" sizes="32x32" />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS and Font Awesome -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body id="top-page">
+
+        <!-- Banner -->
+        <div class="banner">
+            <div class="container-fluid banner">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-4 col-md-6 col-sm-4">
+                        <h1>Learn C#</h1>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8 d-flex flex-row-reverse">
+                        <a class="btn btn-login" data-bs-content="Login" href="#">Log in</a>
+                        <a class="btn btn-signup" data-bs-content="Signup" href="#">Sign up</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+        <!-- Sticky Navbar -->
+        <nav class="navbar navbar-expand-sm" id="navbar">
+            <div class="container-fluid align-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="../index.html"><i class="fa fa-house-chimney"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="intro.html">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="author.html">Author</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase active" href="tutorial.html">Tutorial</a>
+                    </li>
+                </ul>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search . . ." name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Tutorial -->
+        <div class="tutorial">
+            <div class="container-fluid">
+                <div class="left" style="top: 100px; padding-top: 20px;" id="left">
+                    <div class="search-menu">
+                        <h2>C# Tutorial</h2>
+                        <input class="search" autocomplete="off" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+                    
+                        <ul id="myMenu">
+                            <li><a href="tutorial.html">C# Get Started</a></li>
+                            <li><a href="syntax.html">C# Syntax</a></li>
+                            <li><a href="output.html">C# Output</a></li>
+                            <li><a href="comments.html">C# Comments</a></li>
+                            <li><a href="variables.html">C# Variables</a></li>
+                            <li><a class="active" href="data-types.html">C# Data Types</a></li>
+                            <li><a href="type-casting.html">C# Type Casting</a></li>
+                            <li><a href="user-input.html">C# User Input</a></li>
+                            <li><a href="operators.html">C# Operators</a></li>
+                            <li><a href="math.html">C# Math</a></li>
+                            <li><a href="booleans.html">C# Booleans</a></li>
+                            <li><a href="if-else.html">C# If...Else</a></li>
+                            <li><a href="switch.html">C# Switch</a></li>
+                            <li><a href="while-loop.html">C# While Loop</a></li>
+                            <li><a href="for-loop.html">C# For Loop</a></li>
+                            <li><a href="break/continue.html">C# Break/Continue</a></li>
+                            <li><a href="arrays.html">C# Arrays</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Data Types -->
+                <div class="right text-justify" id="get-started">
+                    <h1>C# Data Types</h1>
+                    <a class="btn btn-prev" href="variables.html"><i class="fa-solid fa-angles-left"></i> Previous</i></a>
+                    <a class="btn btn-next" href="type-casting.html">Next <i class="fa-solid fa-angles-right"></i></a>
+                    <hr>
+                    <h2>C# Data Types</h2>
+                    <p>As explained in the variables chapter, a variable in C# must be a specified data type:</p>
+                    <h3>Example</h3>
+                    <img src="../img/DataTypes.png">
+                    <p>A data type specifies the size and type of variable values. It is important to use the correct data type for the corresponding variable; to avoid errors, to save time and memory, but it will also make your code more maintainable and readable. The most common data types are:</p>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th style="width:20%">Data Type</th>
+                                <th style="width:17%">Size</th>
+                                <th style="width:63%">Description</th>
+                            </tr>
+                            <tr>
+                                <td>int</td>
+                                <td>4 bytes</td>
+                                <td>Stores whole numbers from -2,147,483,648 to 2,147,483,647</td>
+                            </tr>
+                            <tr>
+                                <td>long</td>
+                                <td>8 bytes</td>
+                                <td>Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
+                            </tr>
+                            <tr>
+                                <td>float</td>
+                                <td>4 bytes</td>
+                                <td>Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits</td>
+                            </tr>
+                            <tr>
+                                <td>double</td>
+                                <td>8 bytes</td>
+                                <td>Stores fractional numbers. Sufficient for storing 15 decimal digits</td>
+                            </tr>
+                            <tr>
+                                <td>bool</td>
+                                <td>1 bit</td>
+                                <td>Stores true or false values</td>
+                            </tr>
+                            <tr>
+                                <td>char</td>
+                                <td>2 bytes</td>
+                                <td>Stores a single character/letter, surrounded by single quotes</td>
+                            </tr>
+                            <tr>
+                                <td>string</td>
+                                <td>2 bytes per character</td>
+                                <td>Stores a sequence of characters, surrounded by double quotes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <h2>Numbers</h2>
+                    <p>Number types are divided into two groups:</p>
+                    <p><strong>Integer types</strong> stores whole numbers, positive or negative (such as 123 or -456), without decimals. Valid types are <span>int</span> and <span>long</span>. Which type you should use, depends on the numeric value.</p>
+                    <p><strong>Floating point</strong> types represents numbers with a fractional part, containing one or more decimals. Valid types are <span>float</span> and <span>double</span>.</p>
+                    <div class="note">
+                        <p>Even though there are many numeric types in C#, the most used for numbers are <span>int</span> (for whole numbers) and <span>double</span> (for floating point numbers). However, we will describe them all as you continue to read.</p>
+                    </div>
+                    <hr>
+                    <h2>Integer Types</h2>
+                    <h3>Int</h3>
+                    <p>The <span>int</span> data type can store whole numbers from -2147483648 to 2147483647. In general, and in our tutorial, the <span>int</span> data type is the preferred data type when we create variables with a numeric value.</p>
+                    <h3>Example</h3>
+                    <img src="../img/DataTypes1.png">
+                    <h3>Long</h3>
+                    <p>The <span>long</span> data type can store whole numbers from -9223372036854775808 to 9223372036854775807. This is used when <span>int</span> is not large enough to store the value. Note that you should end the value with an "L":</p>
+                    <h3>Example</h3>
+                    <img src="../img/DataTypes2.png">
+                    <hr>
+                    <h2>Floating Point Types</h2>
+                    <p>You should use a floating point type whenever you need a number with a decimal, such as 9.99 or 3.14515.</p>
+                    <h3>Float</h3>
+                    <p>The <span>float</span> data type can store fractional numbers from 3.4e−038 to 3.4e+038. Note that you should end the value with an "F":</p>
+                    <h3>Example</h3>
+                    <img src="../img/DataTypes3.png">
+                    <h2>Double</h2>
+                    <p>The <span>double</span> data type can store fractional numbers from 1.7e−308 to 1.7e+308. Note that you can end the value with a "D" (although not required):</p>
+                    <h3>Example</h3>
+                    <img src="../img/DataTypes4.png">
+                    <div class="note">
+                        <p>Use <span>float</span> or <span>double</span>?</p>
+                        <p>The <strong>precision</strong> of a floating point value indicates how many digits the value can have after the decimal point. The precision of <span>float</span> is only six or seven decimal digits, while <span>double</span> variables have a precision of about 15 digits. Therefore it is safer to use <span>double</span> for most calculations.</p>
+                    </div>
+                    <h3>Scientific Numbers</h3>
+                    <p>A floating point number can also be a scientific number with an "e" to indicate the power of 10:</p>
+                    <h3>Example</h3>
+                    <img src="../img/DataTypes5.png">
+                    <hr>
+                    <h2>Booleans</h2>
+                    <p>A boolean data type is declared with the <span>bool</span> keyword and can only take the values <span>true</span> or <span>false</span>:</p>
+                    <h3>Example</h3>
+                    <img src="../img/DataTypes6.png">
+                    <p>Boolean values are mostly used for conditional testing, which you will learn more about in a later chapter.</p>
+                    <hr>
+                    <h2>Characters</h2>
+                    <p>The <span>char</span> data type is used to store a <strong>single</strong> character. The character must be surrounded by single quotes, like 'A' or 'c':</p>
+                    <h3>Example</h3>
+                    <img src="../img/DataTypes7.png">
+                    <hr>
+                    <h2>Strings</h2>
+                    <p>The <span>string</span> data type is used to store a sequence of characters (text). String values must be surrounded by double quotes:</p>
+                    <h3>Example</h3>
+                    <img src="../img/DataTypes8.png">
+
+                    <a class="btn btn-prev" href="variables.html"><i class="fa-solid fa-angles-left"></i> Previous</i></a>
+                    <a class="btn btn-next" href="type-casting.html">Next <i class="fa-solid fa-angles-right"></i></a>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer --> 
+        <footer class="footer text-center" style="margin-left: 10rem;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7 mb-1">
+                        <div class="row">
+                            <div class="col-8">
+                                <!-- Footer Useful Links-->
+                                <h4 class="text-uppercase mb-4">Useful Links</h4>
+                                <div class="row justify-content-center useful-links">
+                                    <div class="col-lg-4 col-md-12 p-1">
+                                        <ul class="list-unstyled">
+                                            <li><a href="">About</a></li>
+                                            <li><a href="">Blog</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12 p-1">
+                                        <ul class="list-unstyled">
+                                            <li><a href="">.NET</a></li>
+                                            <li><a href="">Learn More</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Footer Social Network-->
+                                <h4 class="text-uppercase my-4">Social Network</h4>
+                                <a class="btn btn-outline-light btn-social mx-1 mt-1" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="link đến facebook của tôi" href="https://www.facebook.com/profile.php?id=100042162583718"><i class="fab fa-fw fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social mx-1 mt-1" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="link đến twitter của tôi" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social mx-1 mt-1" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="link đến instagram của tôi" href="#!"><i class="fa-brands fa-instagram"></i></a>
+                                <a class="btn btn-outline-light btn-social mx-1 mt-1" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="link đến discord của tôi" href="#"><i class="fa-brands fa-discord"></i></a>
+                            </div>
+                             <!-- Footer Quick Contact-->
+                            <div class="col-4">
+                                <h4 class="text-uppercase mb-4">Quick Contact</h4>
+                                <h6 class="text-left">Supporter: </h6>
+                                <p class="lead text-left">Nguyễn Hoàng Đức</p>
+                                <h6 class="text-left">Phone: </h6>
+                                <p class="lead text-left">+84 971 344 172</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Contact-->
+                    <div class="col-lg-5 col-md-5 mb-1">
+                        
+                        <h4 class="text-uppercase mb-4">Contact Us</h4>
+                        <form>
+                            <fieldset class="d-flex justify-content-start form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </fieldset>
+                            <fieldset class="d-flex justify-content-start form-group">
+                                <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                            </fieldset>
+                            <fieldset class="d-flex justify-content-start form-group text-xs-right">
+                                <button type="button" class="btn btn-outline-light btn-lg">Send</button>
+                             </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Kit Font Awesome -->
+        <script src="https://kit.fontawesome.com/aaa1dc302c.js" crossorigin="anonymous"></script>
+
+        <!-- Script JS -->
+        <script src="../js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learn C#</title>
+        <meta content="Learn C#" name="keywords">
+        <meta content="Learn C#" name="description">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="../favicon/favicon-32x32.png" sizes="32x32" />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS and Font Awesome -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body id="top-page">
+
+        <!-- Banner -->
+        <div class="banner">
+            <div class="container-fluid banner">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-4 col-md-6 col-sm-4">
+                        <h1>Learn C#</h1>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8 d-flex flex-row-reverse">
+                        <a class="btn btn-login" data-bs-content="Login" href="#">Log in</a>
+                        <a class="btn btn-signup" data-bs-content="Signup" href="#">Sign up</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+        <!-- Sticky Navbar -->
+        <nav class="navbar navbar-expand-sm" id="navbar">
+            <div class="container-fluid align-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="../index.html"><i class="fa fa-house-chimney"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="intro.html">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="author.html">Author</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase active" href="tutorial.html">Tutorial</a>
+                    </li>
+                </ul>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search . . ." name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Tutorial -->
+        <div class="tutorial">
+            <div class="container-fluid">
+                <div class="left" style="top: 100px; padding-top: 20px;" id="left">
+                    <div class="search-menu">
+                        <h2>C# Tutorial</h2>
+                        <input class="search" autocomplete="off" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+                    
+                        <ul id="myMenu">
+                            <li><a href="tutorial.html">C# Get Started</a></li>
+                            <li><a class="active" href="syntax.html">C# Syntax</a></li>
+                            <li><a href="output.html">C# Output</a></li>
+                            <li><a href="comments.html">C# Comments</a></li>
+                            <li><a href="variables.html">C# Variables</a></li>
+                            <li><a href="data-types.html">C# Data Types</a></li>
+                            <li><a href="type-casting.html">C# Type Casting</a></li>
+                            <li><a href="user-input.html">C# User Input</a></li>
+                            <li><a href="operators.html">C# Operators</a></li>
+                            <li><a href="math.html">C# Math</a></li>
+                            <li><a href="booleans.html">C# Booleans</a></li>
+                            <li><a href="if-else.html">C# If...Else</a></li>
+                            <li><a href="switch.html">C# Switch</a></li>
+                            <li><a href="while-loop.html">C# While Loop</a></li>
+                            <li><a href="for-loop.html">C# For Loop</a></li>
+                            <li><a href="break/continue.html">C# Break/Continue</a></li>
+                            <li><a href="arrays.html">C# Arrays</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Syntax -->
+                <div class="right text-justify" id="get-started">
+                    <h1>C# Syntax</h1>
+                    <a class="btn btn-prev" href="tutorial.html"><i class="fa-solid fa-angles-left"></i> Previous</i></a>
+                    <a class="btn btn-next" href="output.html">Next <i class="fa-solid fa-angles-right"></i></a>
+                    <hr>
+                    
+                    <h2>C# Syntax</h2>
+                    <p>In the previous chapter, we created a C# file called Program.cs, and we used the following code to print "Hello World" to the screen:</p>
+                    <img src="../img/Syntax.png">
+                    <h3>Example explained</h3>
+                    <p><strong>Line 1:</strong> <span>using System</span> means that we can use classes from the System namespace.</p>
+                    <p><strong>Line 2:</strong> A blank line. C# ignores white space. However, multiple lines makes the code more readable.</p>
+                    <p><strong>Line 3:</strong> <span>namespace</span> is used to organize your code, and it is a container for classes and other namespaces.</p>
+                    <p><strong>Line 4:</strong> The curly braces <span>{}</span> marks the beginning and the end of a block of code.</p>
+                    <p><strong>Line 5:</strong> <span>class</span> is a container for data and methods, which brings functionality to your program. Every line of code that runs in C# must be inside a class. In our example, we named the class Program.</p>
+                    <div class="note">
+                        <p>
+                            Don't worry if you don't understand how <span>using System</span>, <span>namespace</span> and <span>class</span> works. 
+                            Just think of it as something that (almost) always appears in your program, and that you will learn more about them in a later chapter.
+                        </p>
+                    </div>
+                    <p><strong>Line 7:</strong> Another thing that always appear in a C# program, is the <span>Main</span> method. Any code inside its curly brackets <span>{}</span> will be executed. You don't have to understand the keywords before and after Main. You will get to know them bit by bit while reading this tutorial</p>
+                    <p><strong>Line 9:</strong><span>Console</span> is a class of the <span>System</span> namespace, which has a <span>WriteLine()</span> method that is used to output/print text. In our example it will output "Hello World!".</p>
+                    <p>If you omit the <span>using System</span> line, you would have to write <span>System.Console.WriteLine()</span> to print/output text.</p>
+                    <p><strong>Note:</strong> Every C# statement ends with a semicolon <span>;</span>.</p>
+                    <p><strong>Note:</strong> C# is case-sensitive: "MyClass" and "myclass" has different meaning.</p>
+                    <p><strong>Note:</strong> Unlike Java, the name of the C# file does not have to match the class name, but they often do (for better organization). When saving the file, save it using a proper name and add ".cs" to the end of the filename. To run the example above on your computer, make sure that C# is properly installed: Go to the <a href="tutorial.html">Get Started Chapter</a> for how to install C#. The output should be:</p>
+                    <img src="../img/Hello.png">
+
+                    <a class="btn btn-prev" href="tutorial.html"><i class="fa-solid fa-angles-left"></i> Previous</i></a>
+                    <a class="btn btn-next" href="output.html">Next <i class="fa-solid fa-angles-right"></i></a>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer --> 
+        <footer class="footer text-center" style="margin-left: 10rem;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7 mb-1">
+                        <div class="row">
+                            <div class="col-8">
+                                <!-- Footer Useful Links-->
+                                <h4 class="text-uppercase mb-4">Useful Links</h4>
+                                <div class="row justify-content-center useful-links">
+                                    <div class="col-lg-4 col-md-12 p-1">
+                                        <ul class="list-unstyled">
+                                            <li><a href="">About</a></li>
+                                            <li><a href="">Blog</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12 p-1">
+                                        <ul class="list-unstyled">
+                                            <li><a href="">.NET</a></li>
+                                            <li><a href="">Learn More</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Footer Social Network-->
+                                <h4 class="text-uppercase my-4">Social Network</h4>
+                                <a class="btn btn-outline-light btn-social mx-1 mt-1" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="link đến facebook của tôi" href="https://www.facebook.com/profile.php?id=100042162583718"><i class="fab fa-fw fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social mx-1 mt-1" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="link đến twitter của tôi" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social mx-1 mt-1" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="link đến instagram của tôi" href="#!"><i class="fa-brands fa-instagram"></i></a>
+                                <a class="btn btn-outline-light btn-social mx-1 mt-1" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="link đến discord của tôi" href="#"><i class="fa-brands fa-discord"></i></a>
+                            </div>
+                             <!-- Footer Quick Contact-->
+                            <div class="col-4">
+                                <h4 class="text-uppercase mb-4">Quick Contact</h4>
+                                <h6 class="text-left">Supporter: </h6>
+                                <p class="lead text-left">Nguyễn Hoàng Đức</p>
+                                <h6 class="text-left">Phone: </h6>
+                                <p class="lead text-left">+84 971 344 172</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Contact-->
+                    <div class="col-lg-5 col-md-5 mb-1">
+                        
+                        <h4 class="text-uppercase mb-4">Contact Us</h4>
+                        <form>
+                            <fieldset class="d-flex justify-content-start form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </fieldset>
+                            <fieldset class="d-flex justify-content-start form-group">
+                                <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                            </fieldset>
+                            <fieldset class="d-flex justify-content-start form-group text-xs-right">
+                                <button type="button" class="btn btn-outline-light btn-lg">Send</button>
+                             </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Kit Font Awesome -->
+        <script src="https://kit.fontawesome.com/aaa1dc302c.js" crossorigin="anonymous"></script>
+
+        <!-- Script JS -->
+        <script src="../js/script.js"></script>
+    </body>
+</html>

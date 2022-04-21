@@ -1,0 +1,747 @@
+/********* General CSS *********/
+body {
+    color: #111111;
+    background: #ffffff;
+    font-family: "Source Sans Pro", sans-serif;
+    cursor: url('../cursors/Custom_Cursor_Logo_Cursor.png'), auto;
+}
+
+a:hover,
+.btn:hover{
+    cursor: url('../cursors/Custom_Cursor_Logo_Pointer.png'), pointer;
+}
+
+.lead{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+hr{
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #eeeeee;
+}
+/********* Banner CSS **********/
+
+.banner{
+    position: relative;
+    color: #131313;
+    padding: 0 20px;
+    margin: 0;
+    z-index: 3;
+}
+
+.banner h1{
+    margin: 0;
+    font-size: 60px;
+    background: #270069;  
+    background: linear-gradient(to right, #370090 10%, #270069 10%, #9F74DA 80%); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+    font-family: 'Beau Rivage', cursive;
+    font-weight: 900;
+}
+
+.banner .btn-login,
+.banner .btn-signup{
+    background-color: #370096;
+    border-radius: 50px;
+    width: 9rem;
+    font-size: 20px;
+    color:#ffffff;
+    font-weight: 600;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-bottom: .25rem;
+    padding: 0.25rem;
+    box-shadow: 0.3em 0.3em 0 0 #370096, inset 0.3em 0.3em 0 0 #370096;
+    transition: 0.5s;
+}
+
+.banner .btn-login:hover,.banner .btn-login:focus,
+.banner .btn-signup:hover,.banner .btn-register:focus{
+    box-shadow: 0 0 0 0 #9F74DA, inset 6em 3.5em 0 0 #9F74DA;
+}
+
+
+/********* Nav Bar CSS *********/
+
+.navbar{
+    position: relative;
+    padding: 0;
+    background: #2c3e50;
+    z-index: 2;
+    top: 0px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar .container-fluid{
+    padding-left: 0;
+}
+ 
+.navbar .navbar-nav .nav-item{
+    padding: 0;
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+    color: #f1f1f1;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    color: #f1f1f1;
+    background: #000000;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active{
+    color: #f1f1f1;
+    background: #9f74dad5;
+}
+
+.navbar .search-container {
+    float: right;
+}
+  
+.navbar input[type=text] {
+    padding: 5px;
+    margin: 0;
+    font-size: 16px;
+    border: none;
+    width: 20em;
+}
+
+.navbar .search-container button {
+    float: right;
+    padding: 5px 10px;
+    margin: 0;
+    margin-right: 16px;
+    background: #dddddd;
+    font-size: 16px;
+    border: none;
+    cursor: url('../cursors/Custom_Cursor_Logo_Pointer.png'), pointer;
+}
+  
+.navbar .search-container button:hover {
+    background: #cccccc;
+}
+
+/* @media screen and (max-width: 600px) {
+    .navbar .search-container {
+        float: none;
+    }
+    .navbar a, .navbar input[type=text], .navbar .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .navbar input[type=text] {
+        border: 1px solid #cccccc;  
+    }
+} */
+
+/********* Home CSS **********/
+
+.home-header{
+    position: relative;
+    color:#ffffff;
+    background: #282A35;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.home-header h1{
+    margin: 0;
+    font-size: 55px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.home-header .btn-learn.raise{
+    background-color: #370096;
+    width: 10rem;
+    font-size: 26px;
+    color:#ffffff;
+    font-weight: 600;
+    margin: .5rem;
+    transition: .5s;
+}
+.home-header .btn-learn.raise:hover,
+.home-header .btn-learn.raise:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #9F74DA ;
+    -webkit-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+}
+
+.home{
+    position: relative;
+    background-color: #D9EEE1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #000000;
+}
+.home h1{
+    margin: 0;
+    font-size: 55px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.home p{
+    font-size: 20px; 
+    font-weight: 600;   
+}
+
+.home .btn-link{
+    background-color: #370096;
+    color: #ffffff;
+    font-size: 20px;
+    margin: auto;
+    display: block;
+    width: 200px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.home .btn-link:hover,
+.home .btn-link:focus {
+    text-decoration: none;
+    box-shadow: -0.5em 0 0.5em 0.4em #9F74DA;
+    -webkit-transform: translateX(1em);
+    transform: translateX(1em);
+}
+
+.home img{
+    width: 100%;
+    height: 100%;
+}
+
+/********* Intro CSS ***********/
+
+.intro{
+    position: relative;
+    padding: 16px 32px 32px 32px;
+    margin: 32px;
+    font-family: Verdana,sans-serif;
+}
+
+.intro .container{
+    margin: 0;
+}
+
+.intro h1{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.intro h2{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.intro p{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.intro p a{
+    color: #111111;
+    text-decoration: underline #111111 solid;
+}
+
+.intro p a:hover,
+.intro p a:focus{
+    color: #9F74DA;
+    text-decoration-color: #9F74DA;
+}
+
+.intro .btn-intro{
+    border-radius: 0;
+    display: inline-flex;
+    width: auto;
+    height: auto;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center; 
+    transition: .8s;
+    background-color: transparent;
+    color: #370096;
+    border: 2px solid #a972cb;
+}
+.intro .btn-intro:hover,
+.intro .btn-intro:focus {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s infinite;
+    box-shadow: 0 0 0 1em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #a972cb;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #a972cb;
+    }
+}
+
+.intro ul{
+    display: block;
+}
+
+/********* Author CSS **********/
+
+.author{
+    position: relative;
+    padding: 16px 32px 32px 32px;
+    margin: 32px;
+    font-family: Verdana,sans-serif;
+}
+
+.author .container{
+    margin: 0;
+}
+
+.author h1{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.author h2{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.author p{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.author p.float-right{
+    position: absolute;
+    top: 420px;  
+    right: 125px;
+    color: #000000;
+    width: 14rem;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+.author img{
+    width: 220px;
+    height: 300px;
+    float: right;
+    margin-left: 15px;
+}
+
+.author .btn-author{
+    position: relative;
+    padding: 1em 1.5em;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    margin: 1em 0.8em;
+}
+
+.author .btn-author.btn-effect{
+    color: #435a6b;
+}
+
+.author .btn-author.btn-effect::after,
+.author .btn-author.btn-effect::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 2px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;
+}
+
+.author .btn-author.btn-effect::after{
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #435a6b;
+    border-right-color: #435a6b;
+}
+
+.author .btn-author.btn-effect::before{
+    top: 5px;
+    left: 5px;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #435a6b;
+    border-left-color: #435a6b;
+}
+
+.author .btn-author.btn-effect:hover:after,
+.author .btn-author.btn-effect:hover:before{
+    border-bottom-color: #435a6b;
+      border-right-color: #435a6b;
+      border-top-color: #435a6b;
+      border-left-color: #435a6b;
+      width: 100%;
+      height: 100%;
+}
+
+/********* Tutorial CSS **********/
+
+.tutorial{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.tutorial .container-fluid{
+    padding-left: 0;
+}
+
+.tutorial .left{
+    position: fixed;  
+    display: block;  
+    height: 100%;
+    width: 220px;
+    margin: 0;
+    background-color: #E7E9EB;
+
+    z-index: 1;
+}
+
+.tutorial .right {
+    margin-left: 220px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+    padding-right: 5em;
+    background-color: transparent;
+    font-family: Verdana,sans-serif;
+}
+
+.tutorial .left .search-menu{
+    height: 95%;
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 5rem;
+}
+.tutorial .left .search-menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+.tutorial .left .search-menu ul li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.tutorial .left .search-menu h2{
+    font-family: "Segoe UI", Arial, sans-serif;
+    display: block;
+    font-size: 26px;
+    margin: 5px 5px 10px 5px;
+    font-weight: 500;
+}
+
+.tutorial .left .search-menu a{
+    display: block;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-top: 5px; 
+    padding-bottom: 3px;
+    padding-right: 2px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.tutorial .left .search-menu a:hover,
+.tutorial .left .search-menu a:focus{
+    color: #000000;
+    background-color: #cccccc;
+}
+
+.tutorial .left .search-menu a.active{
+    color: #f1f1f1;
+    background: #9f74dad5;
+}
+
+.tutorial .left .search-menu .search{
+    width: 95%;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    padding: 5px 2px 5px 5px;   
+    border: 1px solid #dddddd;
+}
+
+.tutorial .right .btn-next,
+.tutorial .right .btn-prev{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.tutorial .right .btn-next{
+    float: right;
+}
+
+.tutorial .right .note{
+    background-color: #ffffcc;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: -32px;
+    margin-right: -32px;
+    padding: 16px 32px;
+}
+
+.tutorial .right .note p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.tutorial .right .note-warning{
+    background-color: #ffdddd;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: -32px;
+    margin-right: -32px;
+    padding: 16px 32px;
+}
+
+.tutorial .right .note-warning p{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.tutorial .right .note-warning a:hover{
+    color: #370090;
+}
+
+.tutorial .right .note p span,
+.tutorial .right ul li span{
+    color: #dc143c;
+}
+
+.tutorial .right .note .atten{
+    background-color: #ffdddd;
+    color: #000000;
+}
+
+.tutorial .right table{
+    display: table;
+    margin: 20px 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #cccccc;
+}
+
+.tutorial .right table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.tutorial .right table tr:nth-child(even) {
+    background-color: #E7E9EB;
+}
+
+.tutorial .right table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.tutorial .right table td,
+.tutorial .right table th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+.tutorial .right table td:first-child,
+.tutorial .right table th:first-child{
+    padding-left: 16px;
+}
+
+.tutorial .right .btn{
+    margin-top: 1.5rem;
+    width: 8em;
+	height: 2.5em;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	background: #ffffff;
+	border: 1px solid #000000;
+	box-shadow: 5px 5px 0 #000000,
+		-5px -5px 0 #000000,
+		-5px 5px 0 #000000,
+		5px -5px 0 #000000;
+	transition: 500ms ease-in-out;
+    text-decoration: none;
+}
+
+.tutorial .right .btn:hover {
+	box-shadow: 15px 5px 0 #370096, -15px -5px 0 #370096;
+    border: 1px solid #370096;
+    color: #370096;
+}
+
+.tutorial .right .btn:focus {
+	outline: none;
+}
+
+.tutorial .right i{
+    font-size: 14px;
+}
+
+.tutorial .right h1{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.tutorial .right h2{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.tutorial .right h3{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.tutorial .right p{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.tutorial .right p span{
+    color: #dc143c;
+}
+
+.tutorial .right strong{
+    font-weight: 700;
+}
+
+.tutorial .right a{
+    text-decoration: underline solid #111111;
+    color: #111111;
+}
+
+.tutorial .right a:hover,
+.tutorial .right a:active{
+    color: #9f74da;
+}
+
+.tutorial .right img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+
+/********* Footer CSS **********/
+
+.footer{
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+.footer i{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.footer h6{
+    font-size: 1.25rem;
+}
+
+.footer .useful-links ul li{
+    padding: 0.2rem;
+    margin: 0;
+}
+
+.footer .useful-links ul li a{
+    font-size: 1.25rem;
+    color: #ffffff;
+    transition: .8s;
+}
+
+.footer .useful-links ul li a:hover{
+    margin-left: 2rem;
+    text-decoration: underline solid #ffffff;
+}
+
+.footer .btn-social{
+    border-radius: 100%;
+    display: inline-flex;
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center; 
+    transition: .8s;
+}
+ 
+.footer form .form-control {
+    background-color: #27282c;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #f1f1f1;
+    padding: 0.7em 1em;
+}
